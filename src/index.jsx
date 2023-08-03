@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import { BookmarksProvider } from './contexts/bookmarks-context';
+import { BrowserRouter as Route, Switch } from 'react-router-dom';
 import Home from './Home';
 
 ReactDOM.render(
   <BrowserRouter>
-    <BookmarksProvider>
-      <Home />
-    </BookmarksProvider>
+    <Switch>
+      <Route path="/" element={<Home />} />
+    </Switch>
   </BrowserRouter>,
   document.getElementById('root')
 );
