@@ -1,5 +1,5 @@
 import React from 'react';
-import bookshelfImage from './bookshelf.jpeg';
+import bookshelfImage from '../images/Shelf.jpeg';
 
 function Header() {
   return (
