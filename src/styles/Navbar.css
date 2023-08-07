@@ -1,6 +1,5 @@
-/* Navbar.css */
 .navbar {
-  position: relative; /* Make the navbar a positioning context for absolute positioning */
+  position: relative; 
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -18,11 +17,10 @@
   margin-left: auto;
 }
 
-/* Add styles for the Bookmark component */
+
 .bookmark-overlay {
   position: absolute;
-  top: 100%; /* Position it below the navbar */
-  right: 0;
+  top: 100%; 
   background-color: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

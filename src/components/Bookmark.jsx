@@ -1,9 +1,7 @@
-// Bookmark.jsx
-
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Book from './Book';
-import '../styles/Bookmark.css'; // Make sure to import the CSS
+import '../styles/Bookmark.css';
 
 const Bookmark = ({ onClose }) => { // Receive the onClose prop
   const bookmarks = useSelector(state => state.bookmark);

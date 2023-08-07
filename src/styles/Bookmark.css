@@ -1,6 +1,3 @@
-/* Bookmark.css */
-
-/* Style for the overlay */
 .overlay {
     position: fixed;
     top: 0;
@@ -12,7 +9,7 @@
     overflow: auto; /* Enable scrolling */
   }
   
-  /* Style for the bookmark container */
+
   .bookmark-container {
     position: absolute;
     top: 50%;

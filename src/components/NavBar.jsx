@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Bookmark from './Bookmark';
-import '../styles/Navbar.css'; // Make sure to import the CSS
+import '../styles/Navbar.css'; 
 
 const Navbar = () => {
   const [showBookmarks, setShowBookmarks] = useState(false);
@@ -9,7 +9,7 @@ const Navbar = () => {
     setShowBookmarks(!showBookmarks);
   };
 
-  const handleBookmarkClose = () => { // Define the close function
+  const handleBookmarkClose = () => { 
     setShowBookmarks(false);
   };
 

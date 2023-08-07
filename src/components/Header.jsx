@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 import Navbar from './Navbar';
 import { useGlobalContext } from '../services/context';
 import bookshelfImage from '../images/Shelf.jpeg';
-import '../styles/Header.css'; // Import the header styles
+import '../styles/Header.css';
 
 const Header = () => {
   const { setSearchTerm, setResultTitle } = useGlobalContext();

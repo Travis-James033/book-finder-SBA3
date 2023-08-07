@@ -1,7 +1,7 @@
 import React from 'react';
 import { useGlobalContext } from '../services/context';
 import Book from './Book';
-import '../styles/BookResults.css'; // Import the CSS file
+import '../styles/BookResults.css'; 
 
 const BookResults = () => {
   const { books, loading, resultTitle } = useGlobalContext();
@@ -17,7 +17,7 @@ const BookResults = () => {
         {books.length === 0 ? (
           <p>No books found.</p>
         ) : (
-          books.map((book) => <Book key={book.id} book={book} className="book" />) // Apply the 'book' class to each book
+          books.map((book) => <Book key={book.id} book={book} className="book" />)
         )}
       </div>
     </section>
