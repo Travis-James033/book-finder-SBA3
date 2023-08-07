@@ -9,9 +9,9 @@ const Header = () => {
 
   return (
     <header className='header'>
+     <Navbar />
       <h1>Header</h1>
       <SearchBar setSearchTerm={setSearchTerm} setResultTitle={setResultTitle} />
-      <Navbar /> {/* Include the Navbar component */}
       <img src={bookshelfImage} alt="library" />
     </header>
   );
