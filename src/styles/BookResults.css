@@ -1,0 +1,12 @@
+/* BookResults.css */
+.book-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .book {
+    width: calc(25% - 10px); /* Adjust the width to distribute 4 books per row */
+    margin-bottom: 20px;
+  }
+  

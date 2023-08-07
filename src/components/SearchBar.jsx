@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { useGlobalContext } from '../services/context';
+import '../styles/SearchBar.css';
 
 const SearchBar = () => {
   const { setSearchTerm, setResultTitle } = useGlobalContext();

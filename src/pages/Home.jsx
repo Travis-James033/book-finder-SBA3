@@ -5,7 +5,6 @@ import BookResults from '../components/BookResults';
 function Home() {
   return (
     <main>
-      <h1>Home</h1>
       <Outlet />
       <BookResults />
     </main>

@@ -1,0 +1,51 @@
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+  }
+  
+  .book-img {
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .book-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .book-info {
+    margin-top: 8px;
+    text-align: center;
+  }
+  
+  .book-title {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+  
+  .book-author,
+  .book-edition-count,
+  .book-publish-year {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 4px;
+  }
+  
+  .cover-not-found {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }

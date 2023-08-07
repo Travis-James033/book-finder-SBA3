@@ -2,6 +2,7 @@ import React from 'react';
 import coverNotFoundImage from '../images/cover_not_found.jpeg';
 import { useDispatch, useSelector } from 'react-redux';
 import { addBookmark, removeBookmark } from '../services/BookmarkSlice';
+import '../styles/Book.css'
 
 const Book = ({ book }) => {
   const { title, author, edition_count, first_publish_year, cover_id, id } = book;
@@ -21,18 +22,22 @@ const Book = ({ book }) => {
   };
 
   return (
-    <article>
-      <h3>{title}</h3>
-      <p>Author: {author}</p>
-      <p>Edition Count: {edition_count}</p>
-      <p>First Publish Year: {first_publish_year}</p>
-      {cover_id ? <img src={coverUrl} alt={title} /> : <img src={coverNotFoundImage} alt="Cover Not Found" />}
-      
-      <button onClick={toggleBookmark}>
-        {isBookmarked ? 'Remove from Bookmarks' : 'Add to Bookmarks'}
-      </button>
+    <article className="book">
+      <div className="book-info">
+        <h3 className="book-title">{title}</h3>
+        <p className="book-author">Author: {author}</p>
+        <p className="book-edition-count">Edition Count: {edition_count}</p>
+        <p className="book-publish-year">First Publish Year: {first_publish_year}</p>
+        <button onClick={toggleBookmark} className="bookmark-button">
+          {isBookmarked ? 'Remove from Bookmarks' : 'Add to Bookmarks'}
+        </button>
+      </div>
+      <div className="book-cover">
+        {cover_id ? <img src={coverUrl} alt={title} /> : <img src={coverNotFoundImage} alt="Cover Not Found" className="cover-not-found" />}
+      </div>
     </article>
   );
 };
 
 export default Book;
+
