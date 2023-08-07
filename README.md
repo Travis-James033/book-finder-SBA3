@@ -1,3 +1,14 @@
+This web application is a book finding app. Users can search for books, view their details, and even bookmark them for later reading with minimal page reloading. The Bookmark component, accessible through the Navbar, shows the integration of Redux and React. This app was built using the React framework and managed with Redux. 
+
+Each book displayed on the app, whether in search results or bookmarks, is represented as a React component. I wanted to create a very component based architecture as it make it easy to manage different aspects of each book.
+
+In this app, Redux is used to manage the bookmarked books' state. When a user bookmarks or removes a book, Redux ensures that the state change is consistent and accessible across different parts of the app, like the Book component and the Bookmark component. Having the centralization of Redux prevents the need to pass down the state of the bookmarks through multiple components. 
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
